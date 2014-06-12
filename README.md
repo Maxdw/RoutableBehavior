@@ -175,7 +175,7 @@ Quick API Rundown
 
 ### Settings
 |Setting|Type|Description|
-|-|-|-|
+|-------|----|-----------|
 |route|string|Set this to the path of the route as defined in routes.php, the behavior will use this route to build URIs.|
 |scope|string or array|Set this to the fieldnames of the data that needs to be passed to the route, make sure it matches the same order as defined in the route. The last field will be used to build /parent/child URIs when the `recursive` setting is set to true.
 |cascadingScope|boolean|When retrieving records with parent records setting this to `true` will require ancestral (parent) records to pass the `scope` setting, otherwise the record will not be considered.|
@@ -188,7 +188,7 @@ Quick API Rundown
 
 ### Methods
 |Method|Arguments|Return|Description|
-|-|-|-|-|
+|------|---------|------|-----------|
 |generateUriList|array \$conditions|array|Finds uniform resource identifiers|
 |generateUrlList|array \$conditions|array|Finds uniform resource locators|
 |serve|array or string \$uri|int or null|Parses the provided URI and will return a ID when it has found a match|
