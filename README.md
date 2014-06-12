@@ -48,7 +48,9 @@ class Page extends AppModel {
 ```
 
 Doing this will enable you to retrieve a list of URIs or URLs using `generateUriList`
-or `generateUrlList` and allow you to parse existing URIs using `serve`.
+or `generateUrlList` and allow you to parse existing URIs using `serve`. The behavior
+will also add URIs or URLs (depending on the `full` setting) to all retrieved data
+under the fieldname defined in the `virtual` setting.
 
 Here's an example of using `serve` to retrieve the data you want:
 
